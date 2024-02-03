@@ -1,0 +1,20 @@
+Test ID Input           Expected Results    Actual Result   Pass or Fail
+1       1,1,1           Equilateral         Equilateral     Pass
+2       201,199,200     InvalidInput        InvalidInput    Pass
+3       199,201,200     InvalidInput        InvalidInput    Pass
+4       200,199,201     InvalidInput        InvalidInput    Pass
+5       0,199,200       InvalidInput        InvalidInput    Pass
+6       199,0,200       InvalidInput        InvalidInput    Pass
+7       200,199,0       InvalidInput        InvalidInput    Pass
+8       155.5,199,200   InvalidInput        InvalidInput    Pass
+9       199,155.5,200   InvalidInput        InvalidInput    Pass
+10      200,199,155.5   InvalidInput        InvalidInput    Pass
+11      3,2,3           Isoceles            Isoceles        Pass
+12      2,3,3           Isoceles            Isoceles        Pass
+13      3,3,2           Isoceles            Isoceles        Pass
+14      200,1,1         NotATriangle        NotATriangle    Pass
+15      1,200,1         NotATriangle        NotATriangle    Pass
+16      1,1,200         NotATriangle        NotATriangle    Pass
+17      3,4,5           RightScalene        RightScalene    Pass
+18      5,3,4           RightScalene        RightScalene    Pass
+19      4,5,3           RightScalene        RightScalene    Pass
