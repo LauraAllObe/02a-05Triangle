@@ -5,4 +5,4 @@ python:
 # command to run tests
 script:
  - python -m unittest TestTriangle
- - pylint test_triangle
+ - pylint pylint --rcfile=.pylintrc test_triangle
